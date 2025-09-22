@@ -28,9 +28,9 @@ Website features
 The website will feature a home page, an about us page, a contact form page, a gallery page, a testimonials page and a product page
  
 Design and user experience
-Colour scheme: Spring colours
+Colour scheme: Earthy colours mainly Light cream, olive green, and a dash of red for the rustic feel
 Typograhy: Arial, Arial bold, Arial Nova
-Layout and design: Rustic modern 
+Layout and design: Rustic
 User accessibility: blind friendly
 
 Requirements
