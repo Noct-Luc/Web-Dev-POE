@@ -17,3 +17,6 @@ Version 0.02
 
   -Further improvements will be made in the coming months
 
+  
+Version 0.03
+  - image sizes fixed to a degree, footer now stays at the bottom of the page and the navigation bar now follows the user as they scroll down
