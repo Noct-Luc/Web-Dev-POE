@@ -90,3 +90,5 @@ Alice, 2021. persona 5 joker birthday cake.  [image online] Available at: <https
 
 Isabella, 2024. Understanding Cakes: FAQs on Genres, Pastries, and More!. [electronic print] Available at: <https://recipessmile.com/understanding-cakes/>  [Accessed 23 August 2025]
 
+Jean Birkalnd, 2025. Female Birthday Cakes Weegee Deans cakepins.com. [image online] Available at: <https://ca.pinterest.com/pin/521010250613692749/> [Accessed 25 September 2025]
+
