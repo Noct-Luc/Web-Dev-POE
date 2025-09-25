@@ -1,0 +1,256 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    height: auto;
+    font-family: Arial, sans-serif;
+    background-color: #f8f5e1; /* Light cream */
+    color: #333333; /* Dark text */
+    line-height: 1.5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: olive; /* Olive green */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Links */
+a {
+    color: #6B8E23;
+    text-decoration: wavy underline;
+    transition: color 0.3s ease;
+    word-wrap: break-word;
+    text-wrap: balance;
+    text-rendering: optimizeLegibility;
+    cursor: pointer;
+    
+}
+
+a:hover {
+    color: #FF6347; /* Tomato red */
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* ensures it stays above other elements */
+    background-color: #f8f5e1;
+}
+
+/* Button styles */
+button {
+    background-color: #6B8E23; /* Olive green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF6347; /* Tomato red */
+}
+
+/* Paragraph text */
+p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #555555; /* Medium gray */
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    text-wrap: balance;
+}
+
+/* Container for content */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Main content layout (Flexbox) */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Cards */
+.card {
+    background-color: #E9E1D3; /* Light beige */
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #6B8E23;
+}
+
+.card .title {
+    font-size: 1.8em;
+    color: #FF6347; /* Tomato red */
+    margin-top: 10px;
+}
+
+.card .description {
+    color: #D3D3D3; /* Light gray */
+}
+
+/* Footer */
+footer {
+    background-color: #6B8E23; /* Olive green */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    align-self: auto;
+    margin-top: auto;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFEB3B; /* Bright yellow */
+}
+
+/* Contact Form */
+.contactform {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+fieldset {
+    margin: 2em;
+    border: 1px solid #da2626;
+    padding: 1em 2em;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #c54343;
+}
+
+label {
+    margin-top: 1em;
+    display: block;
+}
+
+.checklabel {
+    margin-top: 0;
+}
+
+label :first-of-type {
+    margin-top: 0;
+}
+
+input {
+    padding: 0.5em;
+    border: solid 1px #bbb889;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 15em;
+}
+
+textarea {
+    min-width: 100%;
+    min-height: 8em;
+    padding: 0.5em;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+input[type="submit"] {
+    width: 8em;
+    background-color: #6B8E23; /* Olive green */
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: solid 1px greenyellow;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+table img {
+    width: 100%;
+    height: 300px; /* Or any consistent height you prefer */
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Media Queries for Responsiveness (done by ChatGPT) */
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    legend {
+        font-size: 1.75em;
+    }
+
+    fieldset {
+        width: 40%;
+        padding: 1em;
+    }
+}
+html, body {
+    height: 100%;
+}
