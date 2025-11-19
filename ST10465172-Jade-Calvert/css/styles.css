@@ -1,0 +1,535 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    height: auto;
+    font-family: Arial, sans-serif;
+    background-color: #f8f5e1; /* Light cream */
+    color: #333333; /* Dark text */
+    line-height: 1.5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    color: olive; /* Olive green */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Links */
+a {
+    color: #6B8E23;
+    text-decoration: wavy underline;
+    transition: color 0.3s ease;
+    word-wrap: break-word;
+    text-wrap: balance;
+    text-rendering: optimizeLegibility;
+    cursor: pointer;
+    
+}
+
+a:hover {
+    color: #FF6347; /* Tomato red */
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* ensures it stays above other elements */
+    background-color: #f8f5e1;
+    justify-content: center
+    
+}
+nav table {
+    width: auto; /* Let the table auto adjust its width */
+    margin: 0 auto; /* Ensures the table is centered */
+    border-spacing: 10px; /* Adds space between navigation items */
+}
+
+nav td a {
+    color: #6B8E23; /* Olive green */
+    text-decoration: wavy underline;
+    font-size: 1.1em;
+}
+
+nav td a:hover {
+    color: #FF6347; /* Tomato red */
+}
+/* Button styles */
+button {
+    background-color: #6B8E23; /* Olive green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF6347; /* Tomato red */
+}
+
+/* Paragraph text */
+ p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #555555; /* Medium gray */
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    text-wrap: balance;
+}
+
+/* Section styles */
+.cake {
+    background-color: #FFF0E1; /* Light peach */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+     margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #555555; /* Medium gray */
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    text-wrap: balance;
+}
+
+
+/* Container for content */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Main content layout (Flexbox) */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Cards */
+.card {
+    background-color: #E9E1D3; /* Light beige */
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #6B8E23;
+}
+
+.card .title {
+    font-size: 1.8em;
+    color: #FF6347; /* Tomato red */
+    margin-top: 10px;
+}
+
+.card .description {
+    color: #D3D3D3; /* Light gray */
+}
+
+/* Footer */
+footer {
+    background-color: #6B8E23; /* Olive green */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    align-self: auto;
+    margin-top: auto;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFEB3B; /* Bright yellow */
+}
+
+/* Contact Form */
+/* Form Wrapper */
+.contactform {
+    padding: 30px;
+    background-color: #6B8E23; /* Olive Green background */
+    max-width: 500px;
+    margin: 50px auto; /* Centers the form */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    text-align: center;
+    color: white; /* White text inside the form */
+}
+
+/* Form Title */
+.contactform h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white; /* Ensures the header text is white */
+}
+
+/* Image at the top */
+.contactform img {
+    width: 100%;
+    height: 200px; /* Adjust the image size */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    border-radius: 10px; /* Adds rounded corners to the image */
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.contactform input[type="text"],
+.contactform input[type="email"],
+.contactform input[type="date"] {
+    padding: 10px;
+    border: 1px solid #bbb889;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+/* Textarea Styling */
+.contactform textarea {
+    padding: 10px;
+    border: 1px solid #bbb889;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    min-height: 100px; /* Ensures there's enough space for typing */
+}
+
+/* Submit Button */
+.contactform button {
+    background-color: #FF6347; /* Tomato Red */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Button Hover Effect */
+.contactform button:hover {
+    background-color: #f8f5e1; /* Light cream background */
+    color: #6B8E23
+}
+
+.contactform textarea {
+    padding: 10px;
+    border: 1px solid #bbb889;  /* Light olive border */
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    min-height: 150px;  /* Ensures enough space for typing */
+    background-color: #FFF0E1;  /* Light peach background, consistent with the theme */
+    color: #333333;  /* Dark text */
+    text-align: left;  /* Ensures text isn't centered */
+    transition: all 0.3s ease;  /* Smooth transition */
+}
+
+/* Textarea Hover and Focus Effect */
+.contactform textarea:hover, .contactform textarea:focus {
+    border-color: #FF6347;  /* Tomato red border on hover/focus */
+    background-color: #FBE0D1;  /* Lighter peach when hovered */
+    color: #333333;  /* Dark text color */
+    outline: none;  /* Removes the default outline */
+}
+
+/* Adjust Button size for smaller screens */
+@media screen and (max-width: 768px) {
+    .contactform {
+        width: 90%; /* Make the form take 90% of the width on smaller screens */
+    }
+}
+
+.contactform iframe {
+    border: 1px solid #6B8E23; /* Olive green border */
+    border-radius: 8px;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Feedback Message Styling */
+.contactform p {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contactform p.success {
+    color: green;
+}
+
+.contactform p.error {
+    color: red;
+}
+
+
+.errorMessages small {
+    color: red;
+    font-size: 1em;
+    margin-top: 10px;
+    display: block;
+
+}
+
+/* Transition for elements with class 'animate' */
+.animate {
+    transition: all 0.3s ease-in-out;  /* Apply a smooth transition for all properties */
+}
+
+.button-hover:hover {
+    background-color: #FF6347; /* Tomato color on hover */
+    transform: scale(1.1); /* Scale up slightly */
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+.slide-up {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.slide-up.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Ensure images inside the products table don't overflow */
+table img {
+    max-width: 100%; /* Ensure images scale within the table cells */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Limit height to a reasonable size */
+    object-fit: cover; /* Cover the space without distorting the aspect ratio */
+}
+
+/* Optional: If you want the images to have a little padding or margin around them */
+table th, table td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Enquiries Form Custom Styling */
+.enquiries-form {
+    padding: 30px;
+    background-color: #6B8E23; /* Olive Green */
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    text-align: center;
+    color: white; /* White text inside the form */
+}
+
+.enquiries-form h2 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.enquiries-form p {
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+.enquiries-form select,
+.enquiries-form textarea,
+.enquiries-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+/* Specific styles for select */
+.enquiries-form select {
+    height: 40px;
+    border: 1px solid #bbb889; /* Olive green border */
+    background-color: #FFF0E1; /* Light peach background */
+    color: #333333; /* Dark text */
+    font-size: 1.1em;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.enquiries-form select:hover {
+    background-color: #6B8E23; /* Olive green background on hover */
+    color: white; /* White text when hovered */
+    border-color: #FF6347; /* Tomato red border on hover */
+}
+
+/* Specific styles for textarea */
+.enquiries-form textarea {
+    min-height: 150px; /* Ensures enough space for typing */
+    border: 1px solid #bbb889;
+    margin-bottom: 20px;
+}
+
+/* Submit Button Styling */
+.enquiries-form button {
+    background-color: #FF6347; /* Tomato Red */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.enquiries-form button:hover {
+    background-color: #f8f5e1; /* Light cream background */
+    color: #6B8E23;
+    transform: scale(1.1); /* Slightly scale up button on hover */
+}
+
+.enquiries-form textarea {
+    padding: 10px;
+    border: 1px solid #bbb889;  /* Light olive border */
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    min-height: 150px;  /* Ensures enough space for typing */
+    background-color: #FFF0E1;  /* Light peach background, consistent with the theme */
+    color: #333333;  /* Dark text */
+    text-align: left;  /* Ensures text isn't centered */
+    transition: all 0.3s ease;  /* Smooth transition */
+}
+
+/* Textarea Hover and Focus Effect */
+.enquiries-form textarea:hover, .enquiries-form textarea:focus {
+    border-color: #FF6347;  /* Tomato red border on hover/focus */
+    background-color: #FBE0D1;  /* Lighter peach when hovered */
+    color: #333333;  /* Dark text color */
+    outline: none;  /* Removes the default outline */
+}
+
+/* Map Container */
+.enquiries-form .maps-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the two maps */
+}
+
+.enquiries-form .maps-container iframe {
+    width: 50%;
+    height: 450px;
+    border: 1px solid #6B8E23; /* Olive green border */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.enquiries-form .maps-container iframe:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive Styles for Enquiries Form */
+@media screen and (max-width: 768px) {
+    .enquiries-form {
+        width: 90%; /* Make the form take 90% of the screen width */
+    }
+
+    .enquiries-form .maps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enquiries-form .maps-container iframe {
+        width: 100%;
+    }
+
+    .enquiries-form h2 {
+        font-size: 2em;
+    }
+}
+
+
+
+/* Media Queries for Responsiveness (done by ChatGPT) */
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    legend {
+        font-size: 1.75em;
+    }
+
+    fieldset {
+        width: 40%;
+        padding: 1em;
+    }
+}
+html, body {
+    height: 100%;
+}
