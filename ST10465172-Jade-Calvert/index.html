@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A bakery that creates cakes to suit your special memories, perfect for any occasion.">
+    <meta name="keywords" content="Cake, 4, days, Cake4Days, bakery, memories, poeme d'armour, J. Calvert">
+    <meta name="author" content="J. Calvert">
+
+
+    <link rel="stylesheet" href=".css/styles.css">
+    <script src="js/animationScript.js" defer></script>
+    <script src="js/formValidation.js" defer></script>
+
+    <title>Home</title>
+    <h1> <marquee behavior="scroll" direction="left" scrollamount="10" > Welcome to Cake4Days </marquee> </h1>
+
+</head>
+
+<body>
+
+<section class="animate">
+<h2>  Cake4Days </h2>
+<h3> Memories 4 Life</h3>
+<p> We're Cake4Days. We wanna be apart of your memories 4ever </p>
+
+</section>
+    <nav> <table border="0" bgcolor="#f8f5e1" cellpadding="10" cellspacing="5"> 
+
+<tr> <td> <a href="index.html">Home</a> </td>
+    <td> <a href="about.html">About us</a> </td>
+    <td> <a href="contact.html">Contact us</a> </td>
+    <td><a href="enquiry.html">Enquiries</a> </td>
+    <td><a href="products.html">Products</a> </td>
+ </tr> 
+</table> </nav>
+
+
+<center> <figcaption> Example of our cakes </figcaption>  <img src="images/Background1.webp" width=60% height=100% alt="example cake" > </center>
+
+<script type="text/javascript">
+  // This will send a request to increment the visit count
+  fetch('/increment-visit')
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);  // Logs the updated visit count
+    })
+    .catch(error => console.error('Error incrementing visit:', error));
+
+  // This will redirect the user to the homepage after 5 seconds
+  setTimeout(function() {
+    window.location.href = "http://www.cake4days.somee.com"; // Replace with your actual home page URL
+  }, 5000);
+</script>
+
+
+</body>
+<footer>
+    <p> Copyright &copy; 2024 Cake4Days </p>
+</footer>
+</html>
+
